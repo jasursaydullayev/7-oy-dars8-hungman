@@ -4,7 +4,7 @@ import Navbar from "../layout/Navbar";
 
 function Home({navName}) {
   return (
-    <div className="h-full">
+    <div className="h-full home">
     <Navbar />
     <Clavs />
      <Btns />

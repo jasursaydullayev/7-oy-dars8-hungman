@@ -23,9 +23,14 @@
     U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 html {
-  height: 100%;
-  background-image: url('./img/cite-bg-img.png');
+  height: auto;
+  background-image: url("./img/cite-bg-img.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -34,7 +39,7 @@ body {
   height: 100%;
   font-family: "Mouse Memoirs", sans-serif;
 }
-#root{
+#root {
   height: 100%;
 }
 .container {
@@ -45,10 +50,10 @@ body {
   padding-left: 41px;
   padding-right: 41px;
 }
-.layout{
+.layout {
   height: inherit;
 }
-main{
+main {
   height: inherit;
 }
 .start-bg {
@@ -65,4 +70,176 @@ main{
   background: linear-gradient(180deg, #67b6ff 16.42%, #fff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 360px) {
+  .container {
+    width: 100%;
+    max-width: 424px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .start-page-bg {
+    width: 324px;
+    height: 481px;
+    margin-left: 93px;
+  }
+  .logo {
+    width: 100%;
+    min-width: 263px;
+    bottom: 44.8px;
+    margin-left: 5px;
+    margin-bottom: 57.8px;
+  }
+  .play {
+    width: 160px;
+    height: 160px;
+    left: 175px;
+  }
+  .how-bnt {
+    margin-left: -33px;
+  }
+  /* How play */
+  .all-wrapper {
+    gap: 109px;
+  }
+  .all-wrapper-c {
+    gap: 79px;
+  }
+  .back {
+    margin-top: 32px;
+    width: 40px;
+    height: 40px;
+  }
+  .how {
+    padding-top: 32px;
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 400;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .cards {
+    width: 100%;
+    max-width: 324px;
+    height: 185px;
+  }
+  .cards-wrapper {
+    margin-top: 79px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .choose-a-category {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  .text-num {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .choose {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .big-text {
+    text-align: start;
+    margin-top: 6px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .start-page-wrapper {
+    padding-bottom: 144px;
+  }
+  /* categories */
+  .categories-wr {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .category-name {
+    width: 324px;
+    height: 77px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+    padding-top: 24px;
+    border-radius: 20px;
+  }
+  .categories-wrap {
+    height: inherit;
+    padding-bottom: 60px;
+    gap: 16px;
+  }
+  /* Home-navbar */
+  .home-burg {
+    width: 40px;
+    height: 40px;
+  }
+  .home-nav-text {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .home-hurt {
+    width: 36.158px;
+    height: 44px;
+  }
+  .home {
+    background: linear-gradient(
+      180deg,
+      #1a043a 0%,
+      #151278 70.31%,
+      #2b1677 100%
+    );
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 8px;
+    padding-right: 10px;
+    padding-top: 46px;
+    padding-bottom: 62px;
+  }
+  .clavs-wrapper {
+    margin-top: 78px;
+    gap: 12px;
+  }
+  .first-calav {
+    gap: 8px;
+  }
+  .clav-btn {
+    width: 40px;
+    height: 66px;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 120%;
+    border-radius: 12px;
+  }
+  .btns-all-wrapper {
+    max-width: 324px;
+    margin-left: 0px;
+    gap: 8px;
+    margin-left: 8px;
+    padding-bottom: 36px;
+  }
+  .bnts {
+    margin-bottom: 24px;
+    border-radius: 8px;
+    flex: 1 0 0;
+    align-self: stretch;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+    padding-left: 9px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+  }
 }

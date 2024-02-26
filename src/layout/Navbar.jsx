@@ -4,12 +4,12 @@ import hurt from "../img/hurt.svg";
 import { Categories } from "../pages/Categories";
 function Navbar() {
   return (
-    <div className="flex container justify-between">
+    <div className="flex items-center nav-wrap container justify-between">
       <div className="pt-[10px] flex gap-[57px] ">
-        <img src={burger} width={84} height={84} />
-        <h1 className="text-[88px] text-white">Countries</h1>
+        <img className="home-burg" src={burger} width={84} height={84} />
+        <h1 className="text-[88px] home-nav-text text-white">Countries</h1>
       </div>
-      <img className="pt-[10px]" src={hurt} width={53} height={48} />
+      <img className="home-hurt pt-[10px]" src={hurt} width={53} height={48} />
     </div>
   );
 }

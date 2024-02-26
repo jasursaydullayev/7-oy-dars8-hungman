@@ -4,22 +4,24 @@ import { Link } from "react-router-dom";
 
 function StartPage() {
   return (
-    <div className="h-full flex justify-center items-center">
+    <div className="h-full mt-[123px] start-page-wrapper flex justify-center items-center">
       <div className="mt-[60px] mr-[250px]">
-        <div className="absolute start-bg w-[592px] h-[500px] rounded-[72px] shadow-xl"></div>
+        <div className="start-page-bg absolute start-bg w-[592px] h-[500px] rounded-[72px] shadow-xl"></div>
         <img
-          className="relative bottom-[100px] left-[115px]"
+          className="logo relative bottom-[100px] left-[115px]"
           src={hangman}
-          width={355}
-          height={163}
         />
-        <Link to={"/how-play"}>
+        <Link to={"/categories"}>
           <img
-            className="relative left-[190px] bottom-[50px] cursor-pointer"
+            className="play relative left-[190px] bottom-[50px] cursor-pointer"
             src={play}
             alt=""
+            width={200}
+            height={200}
           />
-          <button className="relative text-center rounded-[40px] bg-[#2463FF] shadow-sky-500 py-[12px] px-[64px] left-[160px] text-3xl tracking-wider text-white">
+        </Link>
+        <Link to={"/how-play"}>
+          <button className="how-bnt relative text-center rounded-[40px] bg-[#2463FF] shadow-sky-500 py-[12px] px-[64px] left-[160px] text-3xl tracking-wider text-white">
             HOW TO PLAY
           </button>
         </Link>
