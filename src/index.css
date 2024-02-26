@@ -106,7 +106,7 @@ main {
     gap: 109px;
   }
   .all-wrapper-c {
-    gap: 79px;
+    gap: 69px;
   }
   .back {
     margin-top: 32px;
@@ -157,7 +157,8 @@ main {
     line-height: 120%;
   }
   .start-page-wrapper {
-    padding-bottom: 144px;
+    padding-bottom: 164px;
+    margin-bottom: 60px;
   }
   /* categories */
   .categories-wr {
@@ -175,7 +176,7 @@ main {
   }
   .categories-wrap {
     height: inherit;
-    padding-bottom: 60px;
+    padding-bottom: 75px;
     gap: 16px;
   }
   /* Home-navbar */
@@ -205,7 +206,7 @@ main {
     padding-left: 8px;
     padding-right: 10px;
     padding-top: 46px;
-    padding-bottom: 62px;
+    padding-bottom: 72px;
   }
   .clavs-wrapper {
     margin-top: 78px;
