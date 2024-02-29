@@ -71,6 +71,11 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.start-page-bg {
+  box-shadow: 0px 6px 0px 8px rgba(36, 99, 255, 1) inset;
+  box-shadow: 0px -8px 0px 4px rgba(20, 14, 102, 1) inset;
+  background: linear-gradient(180deg, #344aba 0%, rgba(0, 20, 121, 0.83) 100%);
+}
 
 @media only screen and (max-width: 360px) {
   .container {

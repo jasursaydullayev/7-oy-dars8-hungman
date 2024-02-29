@@ -4,12 +4,12 @@ import Home from "./Home";
 import { useState } from "react";
 
 export function Categories() {
- const [navName, setNavName] = useState(null);
- return (
+  const [navName, setNavName] = useState(null);
+  return (
     <div>
-    <div className="hidden">
-    <Home navName={navName}/>
-    </div>
+      <div className="hidden">
+        <Home navName={navName} />
+      </div>
       <div className="all-wrapper-c flex items-center gap-x-[288px]">
         <Link to={"/"}>
           <img
